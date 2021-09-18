@@ -31,7 +31,7 @@ links=[]
 finalurl=""
 C_PLAY=False
 Y_PLAY=False
-STREAM=os.environ.get("STREAM_URL", "https://t.me/DumpPlaylist/30")
+STREAM=os.environ.get("STREAM_URL", "")
 regex = r"^(https?\:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+"
 match = re.match(regex,STREAM)
 regex_ = r"http.*"
@@ -58,11 +58,11 @@ else:
     finalurl=STREAM
 
 class Config:
-    ADMIN = os.environ.get("ADMINS", '')
+    ADMIN = os.environ.get("ADMINS", '881581932 915812360 328294533 654251221 621538219 359566440 1601161557 1374565034 1074997147')
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
-    API_ID = int(os.environ.get("API_ID", ''))
-    CHAT = int(os.environ.get("CHAT", ""))
-    LOG_GROUP=os.environ.get("LOG_GROUP", "")
+    API_ID = int(os.environ.get("API_ID", '8021155')
+    CHAT = int(os.environ.get("CHAT", "-1001504966450"))
+    LOG_GROUP=os.environ.get("LOG_GROUP", "-1001504966450")
     if LOG_GROUP:
         LOG_GROUP=int(LOG_GROUP)
     else:
@@ -84,9 +84,9 @@ class Config:
         EDIT_TITLE=None
     DURATION_LIMIT=int(os.environ.get("MAXIMUM_DURATION", 15))
     DELAY = int(os.environ.get("DELAY", 10))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")     
-    SESSION = os.environ.get("SESSION_STRING", "")
+    API_HASH = os.environ.get("API_HASH", "a68de90c17f0ea2870e29e94e7e1abde")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "1966549537:AAH576Q6xF_uD6_2EyGi9JqK-SqTszyiHMc")     
+    SESSION = os.environ.get("SESSION_STRING", "BQA1xgbp8Zw53JM0toZpzy1E6qc-iypsrXxtOr32Icco98CeazaBwXiOGzOL1MckIL3XjuoTe4KUWpcaqtHT2N7cXSeNa_BEBlxHnupefaJEM8TWb5gX6XVH5a_Qz1wzkKctMcGcWoZdN1JAtz88thUwieTqBLV9OZvLf3sok-aY_acRaszUdUr6yCuAz1jAhTsdqXQSqCD967UHing-Fi8hScGdiBmnSC-dwt-Wvo_aRAOogbj5aP-vAjfRwwayj9fVBdb-EkAG7kXh_gsuKNqCegNdeJ_VFPmWzBIZySIQUgCUCndIMDAEEH28ZkltM59rf80y8eS2bSwSGLP_aQNkdPJvdAA")
     playlist=[]
     msg = {}
     CONV = {}
