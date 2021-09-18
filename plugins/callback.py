@@ -67,6 +67,8 @@ You can also use <code>/splay song name</code> to play a song from Jio Saavn or 
 **/mute**  Mute in VC.
 **/unmute**  Unmute in VC.
 **/restart**  Update and restarts the Bot.
+
+Contact @liliethaurora for any help.
 """
 
 
